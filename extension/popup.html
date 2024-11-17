@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Link Generator</title>
+    <style>
+        body {
+            width: 300px;
+            height: 200px;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h2 {
+            color: #007BFF;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .input-container {
+            display: flex;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        #countryCode, #phoneInput {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #countryCode {
+            width: 50px;
+        }
+        #phoneInput {
+            width: 180px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 10px;
+            font-size: 14px;
+            color: green;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>WhatsApp send message without saving number</h2>
+    <div class="input-container">
+        <input type="text" id="countryCode" placeholder="91" value="91">
+        <input type="text" id="phoneInput" placeholder="Enter phone number">
+    </div>
+    
+    <button id="openWhatsAppWeb">Open WhatsApp Web</button>
+    <button id="openWhatsAppAPI">Open WhatsApp APP</button>
+    <div class="message" id="message"></div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="popup.js"></script>
+
+</body>
+</html>
